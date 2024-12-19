@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dijkstra's Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dijkstra's Algorithm Visualizer</h1>
+    <div class="input-section">
+      <label for="start-node">Start Node:</label>
+      <input type="text" id="start-node" placeholder="e.g., A">
+      
+      <label for="edge-input">Edge (Format: A,B,4):</label>
+      <input type="text" id="edge-input" placeholder="e.g., A,B,4">
+      <button onclick="addEdge()">Add Edge</button>
+      <button onclick="runDijkstra()">Run Dijkstra</button>
+    </div>
+    
+    <div class="graph-output">
+      <h2>Graph Edges:</h2>
+      <ul id="edges-list"></ul>
+      
+      <h2>Shortest Paths:</h2>
+      <div id="output"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
